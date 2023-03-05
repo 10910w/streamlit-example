@@ -18,8 +18,6 @@ In the meantime, below is an example of what you can do with just a few lines of
 
 d = {'col1': [1, 2], 'col2': [3, 4]}
 my_dataframe = pd.DataFrame(data=d)
-
-with st.dataframe(my_dataframe):
     
 
 with st.echo(code_location='below'):
@@ -42,3 +40,5 @@ with st.echo(code_location='below'):
     st.altair_chart(alt.Chart(pd.DataFrame(data), height=500, width=500)
         .mark_circle(color='#0068c9', opacity=0.5)
         .encode(x='x:Q', y='y:Q'))
+    
+    st.dataframe(my_dataframe)
