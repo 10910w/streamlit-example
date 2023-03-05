@@ -42,3 +42,4 @@ with st.echo(code_location='below'):
         .encode(x='x:Q', y='y:Q'))
     
     st.dataframe(my_dataframe)
+    st.metric('My metric', 42, 2)
